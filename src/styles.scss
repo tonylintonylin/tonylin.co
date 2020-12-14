@@ -5,4 +5,8 @@ $font-family-base: "Inter", sans-serif;
   background-color: black;
 }
 
+.btn-cta:hover {
+    transform: scale(1.02)
+}
+
 @import "~bootstrap/scss/bootstrap";
