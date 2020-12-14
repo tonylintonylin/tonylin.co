@@ -10,6 +10,7 @@ import { TwoColumnComponent } from './two-column/two-column.component';
 import { TwoColumn2Component } from './two-column2/two-column2.component';
 import { TwoColumn3Component } from './two-column3/two-column3.component';
 import { CtaComponent } from './cta/cta.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CtaComponent } from './cta/cta.component';
     TwoColumnComponent,
     TwoColumn2Component,
     TwoColumn3Component,
-    CtaComponent
+    CtaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
