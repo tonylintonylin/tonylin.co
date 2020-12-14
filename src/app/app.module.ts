@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroComponent } from './hero/hero.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { TwoColumnComponent } from './two-column/two-column.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
-    NavBarComponent
+    NavBarComponent,
+    TwoColumnComponent
   ],
   imports: [
     BrowserModule,
