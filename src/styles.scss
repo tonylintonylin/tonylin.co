@@ -6,7 +6,12 @@ $font-family-base: "Inter", sans-serif;
 }
 
 .btn-cta:hover {
-    transform: scale(1.02)
+  transform: scale(1.02);
+}
+
+.feature {
+  padding-top: 62.5%;
+  max-width: 900px;
 }
 
 @import "~bootstrap/scss/bootstrap";
