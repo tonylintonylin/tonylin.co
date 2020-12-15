@@ -10,8 +10,8 @@ $font-family-base: "Inter", sans-serif;
 }
 
 .feature {
-  padding-top: 62.5%;
-  max-width: 900px;
+  width: 100%;
+  height: auto;
 }
 
 @import "~bootstrap/scss/bootstrap";
