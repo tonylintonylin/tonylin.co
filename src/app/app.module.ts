@@ -16,6 +16,7 @@ import { HeadingComponent } from './heading/heading.component';
 import { CardsComponent } from './cards/cards.component';
 import { IconsModule } from './icons/icons.module';
 import { TwoColumn4Component } from './two-column4/two-column4.component';
+import { TwoColumn5Component } from './two-column5/two-column5.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { TwoColumn4Component } from './two-column4/two-column4.component';
     HeadingComponent,
     CardsComponent,
     TwoColumn4Component,
+    TwoColumn5Component,
   ],
   imports: [
     BrowserModule,

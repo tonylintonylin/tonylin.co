@@ -11,6 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  // toggle: Element = this.document.querySelector('.toggle-input');
+  // initialState = localStorage.getItem('toggleState') == 'true';
+  // isDay: boolean = this.initialState;
+
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit() {
@@ -18,6 +22,12 @@ export class AppComponent implements OnInit {
   }
 
   initialAnimations(): void {
+    // this.toggle.addEventListener('change', function () {
+    //   localStorage.setItem('toggleState', this.isDay);
+    // });
+    // if (this.isDay) {
+    //   document.querySelector('.navbar-brand');
+    // }
 
     gsap.from(this.document.querySelector('#col-1-1'), {
       scrollTrigger: {
