@@ -13,6 +13,8 @@ import { CtaComponent } from './cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
 import { TwoColComponent } from './two-col/two-col.component';
 import { HeadingComponent } from './heading/heading.component';
+import { CardsComponent } from './cards/cards.component';
+import { IconsModule } from './icons/icons.module';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { HeadingComponent } from './heading/heading.component';
     CtaComponent,
     FooterComponent,
     TwoColComponent,
-    HeadingComponent
+    HeadingComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IconsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
