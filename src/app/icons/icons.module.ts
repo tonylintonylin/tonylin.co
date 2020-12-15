@@ -8,6 +8,9 @@ import {
   Cloud,
   Github,
   Linkedin,
+  CornerLeftDown,
+  CornerRightDown,
+  ChevronsDown
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
@@ -18,6 +21,9 @@ const icons = {
   Cloud,
   Github,
   Linkedin,
+  CornerLeftDown,
+  CornerRightDown,
+  ChevronsDown,
 };
 
 @NgModule({
