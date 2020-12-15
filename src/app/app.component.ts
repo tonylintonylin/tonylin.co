@@ -18,9 +18,38 @@ export class AppComponent implements OnInit {
   }
 
   initialAnimations(): void {
-    gsap.from(this.document.querySelector('#jelloCTA'), {
+
+    gsap.from(this.document.querySelector('#col-1-1'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('#jelloCTA'),
+        trigger: this.document.querySelector('#col-1-1'),
+        toggleActions: 'restart restart restart restart',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      x: 150,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+    gsap.from(this.document.querySelector('#col-1-2'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#col-1-2'),
+        toggleActions: 'restart restart restart restart',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      x: 150,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+    gsap.from(this.document.querySelector('#col-1-3'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#col-1-3'),
+        toggleActions: 'restart restart restart restart',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      x: 150,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+
+    gsap.from(this.document.querySelector('#inspired'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#inspired'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
       x: 200,

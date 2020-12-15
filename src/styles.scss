@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 $font-family-base: "Inter", sans-serif;
 
+
+
 .bg-black {
   background-color: black;
 }
@@ -13,6 +15,10 @@ $font-family-base: "Inter", sans-serif;
   width: 100%;
   max-width: 800px;
   height: auto;
+  border: 1px solid black;
+  -moz-box-shadow: 15px 15px 40px #ccc;
+  -webkit-box-shadow: 15px 15px 40px #ccc;
+  box-shadow: 15px 15px 40px #ccc;
 }
 
 @import "~bootstrap/scss/bootstrap";

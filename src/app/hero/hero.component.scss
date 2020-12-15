@@ -1,0 +1,16 @@
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 100%;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1366px) {
+  .row {
+    height: 100vh;
+  }
+}
