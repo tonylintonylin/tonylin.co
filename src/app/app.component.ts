@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit() {
@@ -20,8 +20,8 @@ export class AppComponent {
   initialAnimations(): void {
     gsap.from(this.document.querySelector('#smallCTA'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('#subhead1'),
-        toggleActions: 'restart pause resume reset',
+        trigger: this.document.querySelector('#smallCTA'),
+        toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
       x: 200,
       duration: 0.75,
