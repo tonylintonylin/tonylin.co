@@ -1,7 +1,9 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HeroComponent } from './hero/hero.component';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,9 +13,10 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  // toggle: Element = this.document.querySelector('.toggle-input');
-  // initialState = localStorage.getItem('toggleState') == 'true';
-  // isDay: boolean = this.initialState;
+  @ViewChild(HeroComponent) hero: HeroComponent;
+
+  bgColor: string;
+  isDay: boolean = true;
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
@@ -22,13 +25,6 @@ export class AppComponent implements OnInit {
   }
 
   initialAnimations(): void {
-    // this.toggle.addEventListener('change', function () {
-    //   localStorage.setItem('toggleState', this.isDay);
-    // });
-    // if (this.isDay) {
-    //   document.querySelector('.navbar-brand');
-    // }
-
     gsap.from(this.document.querySelector('#col-1-1'), {
       scrollTrigger: {
         trigger: this.document.querySelector('#col-1-1'),
@@ -76,5 +72,10 @@ export class AppComponent implements OnInit {
       duration: 0.75,
       opacity: 0.3,
     });
+  }
+
+  OnToggled(isDay: boolean) {
+    console.log(isDay);
+    this.hero.toggle();
   }
 }

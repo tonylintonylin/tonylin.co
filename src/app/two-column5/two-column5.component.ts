@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-column5.component.scss'],
 })
 export class TwoColumn5Component implements OnInit {
-  fontSize: number;
-
   constructor() {}
 
-  ngOnInit(): void {
-    this.fontSize = 44;
-  }
+  ngOnInit(): void {}
 }
