@@ -9,7 +9,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TwoColumnComponent } from './two-column/two-column.component';
 import { TwoColumn2Component } from './two-column2/two-column2.component';
 import { TwoColumn3Component } from './two-column3/two-column3.component';
-import { CtaComponent } from './cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadingComponent } from './heading/heading.component';
 import { CardsComponent } from './cards/cards.component';
@@ -20,6 +19,8 @@ import { HeadingProjectsComponent } from './heading-projects/heading-projects.co
 import { ListComponent } from './list/list.component';
 import { FullstackProcessComponent } from './fullstack-process/fullstack-process.component';
 import { Heading2Component } from './heading2/heading2.component';
+import { FirstLineComponent } from './first-line/first-line.component';
+import { FirstWebsiteComponent } from './first-website/first-website.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,6 @@ import { Heading2Component } from './heading2/heading2.component';
     TwoColumnComponent,
     TwoColumn2Component,
     TwoColumn3Component,
-    CtaComponent,
     FooterComponent,
     HeadingComponent,
     CardsComponent,
@@ -39,6 +39,8 @@ import { Heading2Component } from './heading2/heading2.component';
     ListComponent,
     FullstackProcessComponent,
     Heading2Component,
+    FirstLineComponent,
+    FirstWebsiteComponent,
   ],
   imports: [
     BrowserModule,
