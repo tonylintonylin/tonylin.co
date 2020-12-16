@@ -17,6 +17,7 @@ import { CardsComponent } from './cards/cards.component';
 import { IconsModule } from './icons/icons.module';
 import { TwoColumn4Component } from './two-column4/two-column4.component';
 import { TwoColumn5Component } from './two-column5/two-column5.component';
+import { HeadingProjectsComponent } from './heading-projects/heading-projects.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TwoColumn5Component } from './two-column5/two-column5.component';
     CardsComponent,
     TwoColumn4Component,
     TwoColumn5Component,
+    HeadingProjectsComponent,
   ],
   imports: [
     BrowserModule,
