@@ -5,12 +5,16 @@ import {
   Layout,
   Database,
   Server,
-  Cloud,
   Github,
   Linkedin,
   CornerLeftDown,
   CornerRightDown,
-  ChevronsDown
+  ChevronsDown,
+  Users,
+  Code,
+  UploadCloud,
+  Star,
+  GitPullRequest,
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
@@ -18,12 +22,16 @@ const icons = {
   Layout,
   Database,
   Server,
-  Cloud,
   Github,
   Linkedin,
   CornerLeftDown,
   CornerRightDown,
   ChevronsDown,
+  Users,
+  Code,
+  UploadCloud,
+  Star,
+  GitPullRequest,
 };
 
 @NgModule({
