@@ -75,7 +75,6 @@ export class AppComponent implements OnInit {
   }
 
   OnToggled(isDay: boolean) {
-    console.log(isDay);
     this.hero.toggle();
   }
 }

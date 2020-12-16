@@ -9,6 +9,7 @@ export class NavBarComponent implements OnInit {
   @Output() toggleSwitched = new EventEmitter<boolean>();
 
   bgColor: string;
+  whiteBlack: string;
   isDay: boolean = true;
 
   constructor() {}
@@ -17,10 +18,12 @@ export class NavBarComponent implements OnInit {
 
   toggle(): void {
     if (this.isDay) {
-      this.bgColor = '#' + 'ffffff';
+      this.bgColor = '#ffffff';
+      this.whiteBlack = '#000000';
       this.isDay = false;
     } else {
-      this.bgColor = '#' + '000000';
+      this.bgColor = '#000000';
+      this.whiteBlack = '#ffffff';
       this.isDay = true;
     }
     this.toggleSwitched.emit(this.isDay);
