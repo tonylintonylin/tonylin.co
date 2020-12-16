@@ -63,9 +63,9 @@ export class AppComponent implements OnInit {
       opacity: 0.3,
     });
 
-    gsap.from(this.document.querySelector('#smallCTA'), {
+    gsap.from(this.document.querySelector('#inspired2'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('#smallCTA'),
+        trigger: this.document.querySelector('#inspired2'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
       x: -100,

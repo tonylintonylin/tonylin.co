@@ -11,7 +11,6 @@ import { TwoColumn2Component } from './two-column2/two-column2.component';
 import { TwoColumn3Component } from './two-column3/two-column3.component';
 import { CtaComponent } from './cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
-import { TwoColComponent } from './two-col/two-col.component';
 import { HeadingComponent } from './heading/heading.component';
 import { CardsComponent } from './cards/cards.component';
 import { IconsModule } from './icons/icons.module';
@@ -32,7 +31,6 @@ import { Heading2Component } from './heading2/heading2.component';
     TwoColumn3Component,
     CtaComponent,
     FooterComponent,
-    TwoColComponent,
     HeadingComponent,
     CardsComponent,
     TwoColumn4Component,
