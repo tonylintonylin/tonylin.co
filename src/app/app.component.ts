@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#col-1-1'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: 150,
+      x: -150,
       duration: 0.75,
       opacity: 0.3,
     });
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#col-1-2'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: 150,
+      x: -150,
       duration: 0.75,
       opacity: 0.3,
     });
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#col-1-3'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: 150,
+      x: -150,
       duration: 0.75,
       opacity: 0.3,
     });
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#inspired'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: 200,
+      x: -200,
       duration: 0.75,
       opacity: 0.3,
     });
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#smallCTA'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: 200,
+      x: -200,
       duration: 0.75,
       opacity: 0.3,
     });

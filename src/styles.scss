@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 $font-family-base: "Inter", sans-serif;
 
+//Debugger
 
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
 
 .bg-black {
   background-color: black;
@@ -13,7 +19,8 @@ $font-family-base: "Inter", sans-serif;
 
 .feature {
   width: 100%;
-  max-width: 800px;
+  // max-width: 800px;
+  max-width: 100%;
   height: auto;
   border: 1px solid black;
   -moz-box-shadow: 15px 15px 40px #ccc;

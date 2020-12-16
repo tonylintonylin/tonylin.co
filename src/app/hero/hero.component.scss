@@ -1,3 +1,15 @@
+h1 {
+  font-size: 3vw;
+}
+
+h6 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
 .rounded-circle {
   border: 2px solid black;
 }
@@ -20,5 +32,19 @@
 @media only screen and (min-width: 1366px) {
   .row {
     height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7vw;
+  }
+
+  h6 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 6vw;
   }
 }
