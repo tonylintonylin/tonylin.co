@@ -20,6 +20,7 @@ import { TwoColumn5Component } from './two-column5/two-column5.component';
 import { HeadingProjectsComponent } from './heading-projects/heading-projects.component';
 import { ListComponent } from './list/list.component';
 import { FullstackProcessComponent } from './fullstack-process/fullstack-process.component';
+import { Heading2Component } from './heading2/heading2.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FullstackProcessComponent } from './fullstack-process/fullstack-process
     HeadingProjectsComponent,
     ListComponent,
     FullstackProcessComponent,
+    Heading2Component,
   ],
   imports: [
     BrowserModule,

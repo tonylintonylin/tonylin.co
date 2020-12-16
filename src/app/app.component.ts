@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#inspired'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: -200,
+      x: -100,
       duration: 0.75,
       opacity: 0.3,
     });
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
         trigger: this.document.querySelector('#smallCTA'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      x: -200,
+      x: -100,
       duration: 0.75,
       opacity: 0.3,
     });
