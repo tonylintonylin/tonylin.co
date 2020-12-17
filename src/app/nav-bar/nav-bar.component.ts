@@ -1,10 +1,31 @@
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
-import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Inject,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss'],
+  animations: [
+    trigger('fade', [
+      state('void', style({ opacity: 0 })),
+      transition(':enter', [animate(300)]),
+      transition(':leave', [animate(500)]),
+    ]),
+  ],
 })
 export class NavBarComponent implements OnInit {
   @Output() toggleSwitched = new EventEmitter<boolean>();
@@ -28,6 +49,17 @@ export class NavBarComponent implements OnInit {
     this.iconCSharp = document.querySelector('.icon-cSharp');
     this.iconAngular = document.querySelector('.icon-angular');
     this.iconSQL = document.querySelector('.icon-sql');
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+    if (window.pageYOffset > 700) {
+      let element = document.getElementById('navbar');
+      element.classList.add('sticky');
+    } else {
+      let element = document.getElementById('navbar');
+      element.classList.remove('sticky');
+    }
   }
 
   toggle(): void {
