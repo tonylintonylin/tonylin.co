@@ -9,6 +9,10 @@ $font-family-base: "Inter", sans-serif;
 //   outline: solid #f00 1px !important;
 // }
 
+html {
+  filter: none;
+}
+
 .bg-black {
   background-color: black;
 }

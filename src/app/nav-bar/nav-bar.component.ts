@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,9 +13,14 @@ export class NavBarComponent implements OnInit {
   whiteBlack: string;
   isDay: boolean = true;
 
-  constructor() {}
+  constructor(@Inject(DOCUMENT) private document) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    document.documentElement.style.setProperty(
+      'filter',
+      'invert(1) hue-rotate(180deg)'
+    );
+  }
 
   toggle(): void {
     if (this.isDay) {

@@ -2,7 +2,6 @@ import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeroComponent } from './hero/hero.component';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +19,7 @@ export class AppComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.initialAnimations();
   }
 
