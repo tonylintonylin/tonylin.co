@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import Typewriter from 't-writer.js';
 
 @Component({
   selector: 'app-hero',
@@ -6,29 +7,39 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
-  // bgColor: string;
-  // whiteBlack: string;
-  // textColor: string;
-  // isDay: boolean = true;
+  @ViewChild('tw2') typewriterElement2;
+  @ViewChild('tw3') typewriterElement3;
 
-  constructor() {}
+  ngOnInit() {
+     target2 = this.typewriterElement2.nativeElement;
+     target3 = this.typewriterElement3.nativeElement;
 
-  ngOnInit(): void {
-    // this.textColor = '#808080';
-    // this.whiteBlack = '#ffffff';
+    const writer2 = new Typewriter(target2, {
+      typeColor: 'blue',
+    });
+    const writer3 = new Typewriter(target3, {
+      typeColor: 'red',
+    });
+
+    writer2
+      .type('I love ')
+      .removeCursor()
+      .then(writer3.start.bind(writer3))
+      .start();
+
+    writer3
+      .type('reading books')
+      .rest(500)
+      .clear()
+      .changeTypeColor('red')
+      .type('building things')
+      .rest(500)
+      .clear()
+      .changeTypeColor('blue')
+      .type('improving')
+      .rest(500)
+      .clear()
+      .changeTypeColor('black')
+      .then(writer2.start.bind(writer2));
   }
-
-  // toggle(): void {
-  //   if (this.isDay) {
-  //     this.bgColor = '#ffffff';
-  //     this.whiteBlack = '#000000';
-  //     this.textColor = '#000000';
-  //     this.isDay = false;
-  //   } else {
-  //     this.bgColor = '#000000';
-  //     this.whiteBlack = '#ffffff';
-  //     this.textColor = '#808080';
-  //     this.isDay = true;
-  //   }
-  // }
 }
