@@ -14,9 +14,9 @@ export class NavBarComponent implements OnInit {
   img: HTMLImageElement;
   feature: HTMLImageElement;
   switch: HTMLImageElement;
-  // switchbg: HTMLImageElement;
-  // switchInput: HTMLImageElement;
-  // toggleSwitch: HTMLImageElement;
+  iconCSharp: HTMLImageElement;
+  iconAngular: HTMLImageElement;
+  iconSQL: HTMLImageElement;
 
   constructor(@Inject(DOCUMENT) private document) {}
 
@@ -25,7 +25,9 @@ export class NavBarComponent implements OnInit {
     this.img = document.querySelector('img');
     this.feature = document.querySelector('.feature');
     this.switch = document.querySelector('.wrapper');
-
+    this.iconCSharp = document.querySelector('.icon-cSharp');
+    this.iconAngular = document.querySelector('.icon-angular');
+    this.iconSQL = document.querySelector('.icon-sql');
   }
 
   toggle(): void {
@@ -35,14 +37,24 @@ export class NavBarComponent implements OnInit {
       this.img.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       this.feature.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       this.switch.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
-
+      this.iconCSharp.style.setProperty(
+        'filter',
+        'invert(1) hue-rotate(180deg)'
+      );
+      this.iconSQL.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
+      this.iconAngular.style.setProperty(
+        'filter',
+        'invert(1) hue-rotate(180deg)'
+      );
     } else {
       this.isDay = true;
       this.html.style.setProperty('filter', 'none');
       this.img.style.setProperty('filter', 'none');
       this.feature.style.setProperty('filter', 'none');
       this.switch.style.setProperty('filter', 'none');
-
+      this.iconCSharp.style.setProperty('filter', 'none');
+      this.iconAngular.style.setProperty('filter', 'none');
+      this.iconSQL.style.setProperty('filter', 'none');
     }
   }
 }

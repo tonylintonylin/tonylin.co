@@ -9,9 +9,13 @@ FFFDF2 - moon inner
 DEE1C5 - moon outer
 FCFCFC - stars
 */
+.navbar {
+  border-bottom: solid black;
+  border-width: 1px;
+}
 
 a {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .wrapper {
