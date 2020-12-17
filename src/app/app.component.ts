@@ -1,8 +1,7 @@
-import { Component, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { HeroComponent } from './hero/hero.component';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,11 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+  
 export class AppComponent implements OnInit {
-  @ViewChild(HeroComponent) hero: HeroComponent;
-
-  bgColor: string;
-  isDay: boolean = true;
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
@@ -71,9 +67,5 @@ export class AppComponent implements OnInit {
       duration: 0.75,
       opacity: 0.3,
     });
-  }
-
-  OnToggled(isDay: boolean) {
-    this.hero.toggle();
   }
 }
