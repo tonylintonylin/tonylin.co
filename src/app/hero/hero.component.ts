@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import * as Typed from 'typed.js';
 import Typed from 'typed.js';
 
 @Component({
@@ -13,18 +12,20 @@ export class HeroComponent implements OnInit {
   ngOnInit() {
     let options = {
       strings: [
+        'learning.',
         'reading books.',
         'building things.',
-        'learning stuff.',
+        'growing.',
         'optimizing stuff.',
+        'change.',
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 30,
       showCursor: true,
       cursorChar: '|',
       loop: true,
     };
 
-    let typed = new Typed('.typing-element', options);
+    let typed = new Typed('.process-typing-element', options);
   }
 }
