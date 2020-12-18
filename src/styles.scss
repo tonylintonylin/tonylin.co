@@ -40,4 +40,15 @@ img {
   box-shadow: 15px 15px 40px #ccc;
 }
 
+.web-feature {
+  filter: none;
+  width: 100%;
+  max-width: 912px;
+  height: auto;
+  border: 1px solid black;
+  -moz-box-shadow: 15px 15px 40px #ccc;
+  -webkit-box-shadow: 15px 15px 40px #ccc;
+  box-shadow: 15px 15px 40px #ccc;
+}
+
 @import "~bootstrap/scss/bootstrap";
