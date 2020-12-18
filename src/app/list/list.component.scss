@@ -1,6 +1,11 @@
 .row {
+  border-top: solid black;
   border-bottom: solid black;
   border-width: 1px;
+}
+
+.bg-gray{
+  background-color: lightgray;
 }
 
 .list-container {
