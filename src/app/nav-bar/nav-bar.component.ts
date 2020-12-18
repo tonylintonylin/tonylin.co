@@ -33,7 +33,7 @@ export class NavBarComponent implements OnInit {
   isDay: boolean = true;
   html: HTMLHtmlElement;
   img: HTMLImageElement;
-  feature: HTMLImageElement;
+  features: NodeListOf<Element>;
   switch: HTMLImageElement;
   iconCSharp: HTMLImageElement;
   iconAngular: HTMLImageElement;
@@ -44,7 +44,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     this.html = document.querySelector('html');
     this.img = document.querySelector('img');
-    this.feature = document.querySelector('.feature');
+    this.features = document.querySelectorAll('.feature');
     this.switch = document.querySelector('.wrapper');
     this.iconCSharp = document.querySelector('.icon-cSharp');
     this.iconAngular = document.querySelector('.icon-angular');
@@ -67,7 +67,6 @@ export class NavBarComponent implements OnInit {
       this.isDay = false;
       this.html.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       this.img.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
-      this.feature.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       this.switch.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       this.iconCSharp.style.setProperty(
         'filter',
@@ -78,15 +77,22 @@ export class NavBarComponent implements OnInit {
         'filter',
         'invert(1) hue-rotate(180deg)'
       );
+
+      [].forEach.call(this.features, function (feature) {
+        feature.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
+      });
     } else {
       this.isDay = true;
       this.html.style.setProperty('filter', 'none');
       this.img.style.setProperty('filter', 'none');
-      this.feature.style.setProperty('filter', 'none');
       this.switch.style.setProperty('filter', 'none');
       this.iconCSharp.style.setProperty('filter', 'none');
       this.iconAngular.style.setProperty('filter', 'none');
       this.iconSQL.style.setProperty('filter', 'none');
+
+      [].forEach.call(this.features, function (feature) {
+        feature.style.setProperty('filter', 'none');
+      });
     }
   }
 }
