@@ -34,6 +34,7 @@ export class NavBarComponent implements OnInit {
   html: HTMLHtmlElement;
   img: HTMLImageElement;
   features: NodeListOf<Element>;
+  webFeatures: NodeListOf<Element>;
   switch: HTMLImageElement;
   iconCSharp: HTMLImageElement;
   iconAngular: HTMLImageElement;
@@ -50,7 +51,7 @@ export class NavBarComponent implements OnInit {
     this.iconAngular = document.querySelector('.icon-angular');
     this.iconSQL = document.querySelector('.icon-sql');
     this.features = document.querySelectorAll('.feature');
-    // this.svgs = document.querySelectorAll('.brand-logos');
+    this.webFeatures = document.querySelectorAll('.web-feature');
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -84,6 +85,9 @@ export class NavBarComponent implements OnInit {
         feature.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       });
 
+      [].forEach.call(this.webFeatures, function (webFeature) {
+        webFeature.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
+      });
       // [].forEach.call(this.svgs, function (svg) {
       //   svg.style.setProperty('filter', 'invert(1) hue-rotate(180deg)');
       // });
@@ -100,6 +104,9 @@ export class NavBarComponent implements OnInit {
         feature.style.setProperty('filter', 'none');
       });
 
+      [].forEach.call(this.webFeatures, function (webFeature) {
+        webFeature.style.setProperty('filter', 'none');
+      });
       // [].forEach.call(this.svgs, function (svg) {
       //   svg.style.setProperty('filter', 'none');
       // });
