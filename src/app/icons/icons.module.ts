@@ -16,6 +16,7 @@ import {
   Star,
   GitPullRequest,
   PhoneCall,
+  Heart,
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
@@ -34,6 +35,7 @@ const icons = {
   Star,
   GitPullRequest,
   PhoneCall,
+  Heart,
 };
 
 @NgModule({
