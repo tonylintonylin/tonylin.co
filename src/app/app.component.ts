@@ -10,9 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-  
 export class AppComponent implements OnInit {
-
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
@@ -48,9 +46,9 @@ export class AppComponent implements OnInit {
       opacity: 0.3,
     });
 
-    gsap.from(this.document.querySelector('#inspired'), {
+    gsap.from(this.document.querySelector('#sub-1'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('#inspired'),
+        trigger: this.document.querySelector('#sub-1'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
       x: -100,
@@ -58,12 +56,42 @@ export class AppComponent implements OnInit {
       opacity: 0.3,
     });
 
-    gsap.from(this.document.querySelector('#inspired2'), {
+    gsap.from(this.document.querySelector('#sub-2'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('#inspired2'),
+        trigger: this.document.querySelector('#sub-2'),
         toggleActions: 'restart restart restart restart',
       } as gsap.plugins.ScrollTriggerInstanceVars,
       x: -100,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+
+    gsap.from(this.document.querySelector('#head-1'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#head-1'),
+        toggleActions: 'play none none none',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      y: 100,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+
+    gsap.from(this.document.querySelector('#head-2'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#head-2'),
+        toggleActions: 'play none none none',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      y: 100,
+      duration: 0.75,
+      opacity: 0.3,
+    });
+
+    gsap.from(this.document.querySelector('#head-3'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#head-3'),
+        toggleActions: 'play none none none',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      y: 100,
       duration: 0.75,
       opacity: 0.3,
     });

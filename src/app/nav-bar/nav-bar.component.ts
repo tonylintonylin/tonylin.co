@@ -56,7 +56,7 @@ export class NavBarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    if (window.pageYOffset > 700) {
+    if (window.pageYOffset > -1) {
       let element = document.getElementById('navbar');
       element.classList.add('sticky');
     } else {
