@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tony-lin": {
+      "hosting": {
+        "tonylin": [
+          "tony-lin"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tony-lin"
+  }
+}
