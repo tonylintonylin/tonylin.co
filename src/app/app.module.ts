@@ -21,6 +21,7 @@ import { FullstackProcessComponent } from './fullstack-process/fullstack-process
 import { Heading2Component } from './heading2/heading2.component';
 import { FirstLineComponent } from './first-line/first-line.component';
 import { FirstWebsiteComponent } from './first-website/first-website.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FirstWebsiteComponent } from './first-website/first-website.component';
     Heading2Component,
     FirstLineComponent,
     FirstWebsiteComponent,
+    BookComponent,
   ],
   imports: [
     BrowserModule,
