@@ -15,6 +15,7 @@ import {
   UploadCloud,
   Star,
   GitPullRequest,
+  PhoneCall,
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
@@ -32,6 +33,7 @@ const icons = {
   UploadCloud,
   Star,
   GitPullRequest,
+  PhoneCall,
 };
 
 @NgModule({

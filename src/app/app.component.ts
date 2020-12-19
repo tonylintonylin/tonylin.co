@@ -95,5 +95,15 @@ export class AppComponent implements OnInit {
       duration: 0.75,
       opacity: 0.3,
     });
+
+    gsap.from(this.document.querySelector('#head-4'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#head-4'),
+        toggleActions: 'play none none none',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      y: 100,
+      duration: 0.75,
+      opacity: 0.3,
+    });
   }
 }
