@@ -16,7 +16,6 @@ export class HeroComponent implements OnInit {
         'reading books.',
         'building things.',
         'optimizing stuff.',
-        'tinkering with exciting technology.',
       ],
       typeSpeed: 50,
       backSpeed: 30,
